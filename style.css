@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	cursor: url("cursors/TEXT-SELECT.png"),auto;
+	height: 100%;
+}
+
+a:hover{
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+
+body {
+	height: auto;
+	background-color: #fbfaf8;
+}
+
+.logo:hover{
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+
+.header {
+	height: 70px;
+	/*background-color: #8A8A8A;*/
+}
+.header ul {
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 100%;
+}
+.header ul li {
+	padding-top: 15px;
+	list-style: none;
+	float: left;
+	font-family: calisto;
+	font-style: italic;
+	letter-spacing: -2.3pt;
+	font-size: 25pt;
+	color: #fbfaf8;
+	text-align: center;
+	width: 20%;
+	height: 58px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#about {
+	background-image:url("about.svg");
+	background-size: 100%;
+	font-size: 27pt;
+}
+#about2 {
+	color: #9F2E57;
+	background-image:url("about2.svg");
+	background-size: 100%;
+	font-size: 27pt;
+}
+
+#blog {
+	background-image:url("blog.svg");
+	background-size: 70%;
+	padding-top: 18px;
+	font-size: 25pt;
+}
+#blog2 {
+	background-image:url("blog2.svg");
+	color: #9F2E57;
+	background-size: 70%;
+	padding-top: 18px;
+	font-size: 25pt;
+}
+
+#portfolio {
+	padding-top: 20px;
+	background-image:url("portfolio.svg");
+	background-size: 90%;
+	font-size: 23pt;
+}
+#portfolio2 {
+	padding-top: 20px;
+	color: #9F2E57;
+	background-image:url("portfolio2.svg");
+	background-size: 90%;
+	font-size: 23pt;
+}
+
+#cv {
+	padding-top: 12px;
+	background-image:url("cv.svg");
+	background-size: 80%;
+	font-size: 30pt;
+	padding-right: 10px;
+	width: 18%;
+}
+#cv2 {
+	padding-top: 12px;
+	color: #9F2E57;
+	background-image:url("cv2.svg");
+	background-size: 80%;
+	font-size: 30pt;
+	padding-right: 10px;
+	width: 18%;
+}
+
+#contact {
+	padding-top: 18px;
+	background-image:url("contact.svg");
+	background-size: 90%;
+	padding-right: 6px;
+	width: 19%;
+}
+#contact2 {
+	padding-top: 18px;
+	color: #9F2E57;
+	background-image:url("contact2.svg");
+	background-size: 90%;
+	padding-right: 6px;
+	width: 19%;
+}
+
+#about:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#about2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#blog:hover {
+	/*color: #a02e57;*/
+	transform: rotate(-10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#blog2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#portfolio:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#portfolio2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#cv:hover {
+	/*color: #a02e57;*/
+	transform: rotate(-10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#cv:hover2 {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#contact:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#contact2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+
+.content {
+	display: flex;
+    flex-wrap: wrap;
+	margin-top: 10px;
+	border: 2px solid #000000;
+}
+
+.left_content {
+	float: left;
+	width: 46%;
+	margin-left: 20px;
+	margin-right: 10px;
+	/*border: 1px solid #000000;*/
+}
+
+.right_content {
+	float: left;
+	width: 43%;
+	margin-left: 10px;
+	margin-top: 10px;
+	/*border: 1px solid #000000;*/
+}
+
+.pix {
+	text-align: center;
+}
+
+h1{
+	font-weight: normal;
+	font-family: "Calisto MT";
+	font-style: italic;
+	font-size: 57pt;
+	letter-spacing: -5pt;
+	padding: 0px;
+	margin: 0px;
+	
+}
+.p1{
+	font-family: "Calisto MT";
+	text-align: justify;
+	font-size: 13pt;
+	letter-spacing: -0.7pt;
+}
+.p2{
+	font-family: "Calisto MT";
+	text-align: left;
+	font-size: 13pt;
+	letter-spacing: -0.7pt;
+}
+.p2 a{
+	font-size: 13pt;
+	font-family: "journal", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color:#9F2E57;
+	text-decoration: inherit;
+}
+.p2 .email{
+	color:#8A8A8A;
+}
+.p2 .bluesky{
+	color:#77ACAB;
+}
+.p2 .linkedin{
+	color:#2c4699;
+}
+.p2 a:hover{
+	text-decoration: underline;
+}
+
+.book{
+	float: right;
+	margin-right: 17%;
+	width: 15%;
+}
+
+.reel{
+	border: 2px solid #000000;
+	padding: 4px;
+}
+
+.tree {
+	position: relative;
+	width: 258px;
+	top: -33px;
+	right: 0px;
+	z-index: 1;
+}
+.me {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	top: -15px;
+}
+.pix {
+	position: relative;
+	margin-top: -40px;
+	margin-bottom: 25px;
+}
+
+.pic {
+	display: block;
+	border: 2px solid #000000;
+	margin: auto;
+	margin-top: 20px;
+	padding: 4px;
+}
+
+.socials ul {
+	margin:auto;
+	text-align: right;
+	float:right;
+}
+.socials ul li {
+	padding-top: 15px;
+	list-style: none;
+	display: inline-block;
+	font-family: calisto;
+	font-style: italic;
+	letter-spacing: -2.3pt;
+	font-size: 25pt;
+	color: #000000;
+	text-align: left;
+	height: 58px;
+}
+
+#youtube a{
+	color:#A02E57;
+	text-decoration: inherit;
+}
+
+#bluesky a{
+	color:#77ACAB;
+	text-decoration: inherit;
+}
+
+#linkedin a{
+	color: #2c4699;
+	text-decoration: inherit;
+}
+
+#email a{
+	color:#8A8A8A;
+	text-decoration: inherit;
+}
+
+@media (max-width: 900px) {
+.left_column {
+	width: 100%;
+}
+.logo {
+	width: 40%;
+	margin: auto;	
+}
+.deer {
+	width: 20%;
+	display: block;
+	float:right;
+	position: relative;
+	top: -22px;
+	}
+.right_column {
+}
+}
+
+@media (min-width: 901px) {
+    .container {
+        background-color: #fbfaf8;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+    }
+    .left_column {
+        width: 23%;
+        padding-bottom: 10px;
+        padding-right: 4%;
+        float: left;
+    }
+    .deer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 90%;
+        top: -22px;
+        z-index: 1;
+    }
+	.face{
+		position: relative;
+	}
+    .right_column {
+        width: 73%;
+        float: right;
+    }
+}
