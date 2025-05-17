@@ -171,6 +171,129 @@ body {
 	cursor: url("cursors/LINK-SELECT.png"),auto;
 }
 
+.sider ul {
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	width: 90%;
+}
+.sider ul a{
+	text-decoration: none;
+}
+.sider ul li {
+	list-style: none;
+	margin: auto;
+	font-family: calisto;
+	font-style: italic;
+	letter-spacing: -2.3pt;
+	font-size: 25pt;
+	color: #fbfaf8;
+	text-align: center;
+	width: 70%;
+	height: 58px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	filter: hue-rotate(-100deg);
+}
+
+#animation {
+	padding-top: 23px;
+	background-image:url("portfolio.svg");
+	background-size: 90%;
+	font-size: 20pt;
+}
+#animation3 {
+	margin-top: 250px;*/
+	position: relative;
+	left: -17px;
+	top: 2px;
+	background-image:url("portfolio.svg");
+	background-size: 90%;
+	f	font-size: 20pt;
+	font-size: 20pt;
+	
+}
+
+#concept {
+	padding-top: 23px;
+	background-image:url("contact.svg");
+	background-size: 90%;
+	padding-right: 6px;
+	font-size: 22pt;
+	width: 63%;
+}
+#concept3 {
+	position: relative;
+	top: -9px;
+	background-image:url("contact.svg");
+	background-size: 90%;
+	padding-right: 6px;
+	font-size: 22pt;
+	width: 63%;
+	transform: rotate(-8deg);
+}
+#music {
+	background-image:url("blog.svg");
+	background-size: 67%;
+	padding-top: 24px;
+	padding-right: 6px;
+	font-size: 23pt;
+}
+#music3 {
+	background-image:url("blog.svg");
+	position: relative;
+	top: -18px;
+	left: -20px;
+	background-size: 67%;
+	padding-right: 6px;
+	font-size: 23pt;
+}
+#writing {
+	background-image:url("cv.svg");
+	background-size: 80%;
+	padding-top: 23px;
+	font-size: 22pt;
+}
+#writing3 {
+	background-image:url("cv.svg");
+	position: relative;
+	top: -28px;
+	background-size: 80%;
+	font-size: 23pt;
+	transform: rotate(-1deg);
+}
+#editing {
+	background-image:url("contact.svg");
+	background-size: 85%;
+	padding-top: 18px;
+	transform: scaleX(-1);
+}
+.f2 {
+	transform: scaleX(-1);
+	position: relative;
+	top:-29px;
+	font-size: 22pt;
+}
+#editing3 {
+	background-image:url("contact.svg");
+	position: relative;
+	top: -49px;
+	left: -10px;
+	background-size: 85%;
+	padding-top: 18px;
+	font-size: 25pt;
+    transform: scaleX(-1)rotate(7deg);
+}
+
+
+
 .content {
 	display: flex;
     flex-wrap: wrap;
