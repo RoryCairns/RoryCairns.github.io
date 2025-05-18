@@ -38,7 +38,6 @@ body {
 	padding-top: 15px;
 	list-style: none;
 	float: left;
-	font-family: calisto;
 	font-style: italic;
 	letter-spacing: -2.3pt;
 	font-size: 25pt;
@@ -189,7 +188,6 @@ body {
 .sider ul li {
 	list-style: none;
 	margin: auto;
-	font-family: calisto;
 	font-style: italic;
 	letter-spacing: -2.3pt;
 	font-size: 25pt;
@@ -210,13 +208,12 @@ body {
 	font-size: 20pt;
 }
 #animation3 {
-	margin-top: 250px;*/
+	margin-top: 250px;
 	position: relative;
 	left: -17px;
 	top: 2px;
 	background-image:url("portfolio.svg");
 	background-size: 90%;
-	f	font-size: 20pt;
 	font-size: 20pt;
 	
 }
@@ -323,7 +320,7 @@ body {
 
 h1{
 	font-weight: normal;
-	font-family: "Calisto MT";
+	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
 	font-style: italic;
 	font-size: 57pt;
 	letter-spacing: -5pt;
@@ -332,13 +329,13 @@ h1{
 	
 }
 .p1{
-	font-family: "Calisto MT";
+	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
 	text-align: justify;
 	font-size: 13pt;
 	letter-spacing: -0.7pt;
 }
 .p2{
-	font-family: "Calisto MT";
+	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
 	text-align: left;
 	font-size: 13pt;
 	letter-spacing: -0.7pt;
@@ -412,7 +409,7 @@ h1{
 	padding-top: 15px;
 	list-style: none;
 	display: inline-block;
-	font-family: calisto;
+	font-family: 'Calisto MT','Sorts Mill Goudy', serif;
 	font-style: italic;
 	letter-spacing: -2.3pt;
 	font-size: 25pt;
