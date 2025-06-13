@@ -39,7 +39,7 @@ body {
 	list-style: none;
 	float: left;
 	font-style: italic;
-	font-family: 'Times New Roman', serif;
+	font-family: "Times New Roman",'times-new-roman', sans-serif;
 	letter-spacing: -2.3pt;
 	font-size: 25pt;
 	color: #fbfaf8;
@@ -321,7 +321,7 @@ body {
 
 h1{
 	font-weight: normal;
-	font-family: "Calisto MT", 'Times New Roman', serif;
+	font-family: "Calisto MT", 'times-new-roman', sans-serif;
 	font-style: italic;
 	font-size: 57pt;
 	letter-spacing: -5pt;
