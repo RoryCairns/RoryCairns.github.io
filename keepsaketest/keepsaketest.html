@@ -1,0 +1,24 @@
+<html> 
+<head> 
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script> 
+</head> 
+<body> 
+<script>     
+window.RufflePlayer = window.RufflePlayer || {}; 
+//Below code forces autoplay, no splashscreen and allows sound 
+
+window.RufflePlayer.config = { 
+"autoplay": "on","splashScreen": false,"unmuteOverlay": "hidden" }; 
+// End custom configuration code above     
+window.addEventListener("load", (event) => {         
+const ruffle = window.RufflePlayer.newest();         
+const player = ruffle.createPlayer();         
+const container = document.getElementById("container");         container.appendChild(player);         
+player.load("games/keepsake/k1/quest.swf?nocache=" + Date.now());
+player.style.width = "600px";
+player.style.height = "400px";   
+}); 
+</script> 
+<div id="container"></div> 
+</body> 
+</html>
