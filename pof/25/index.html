@@ -4,25 +4,76 @@
 <meta charset="utf-8">
 <title>Online Advent Calendar 2025</title>
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<link href="pof25.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<script>     
-window.RufflePlayer = window.RufflePlayer || {}; 
-//Below code forces autoplay, no splashscreen and allows sound 
+<div class="container">
+    <div id="flash"></div>
+</div>
 
-window.RufflePlayer.config = { 
-"autoplay": "on","splashScreen": false,"unmuteOverlay": "hidden" }; 
-// End custom configuration code above     
-window.addEventListener("load", (event) => {         
-const ruffle = window.RufflePlayer.newest();         
-const player = ruffle.createPlayer();         
-const container = document.getElementById("container");         container.appendChild(player);         
-player.load("calendar.swf?nocache=" + Date.now());
-player.style.width = "1600px";
-player.style.height = "1000px";   
-}); 
-</script> 
-<div id="container"></div> 
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+    autoplay: "on",
+    splashScreen: false,
+    unmuteOverlay: "hidden"
+};
+
+window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+
+    const flashDiv = document.getElementById("flash");
+    flashDiv.appendChild(player);
+    player.load("calendar.swf?nocache=" + Date.now());
+
+    const resizePlayer = () => {
+        const width = flashDiv.clientWidth;
+        const height = width * 400 / 550;
+        player.style.width = width + "px";
+        player.style.height = height + "px";
+    };
+
+    resizePlayer();
+
+    const resizeObserver = new ResizeObserver(resizePlayer);
+    resizeObserver.observe(flashDiv);
+});
+</script>
+
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ✉
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ✉
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+</div>	
+	
 </body>
 </html>
