@@ -12,9 +12,15 @@
 	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 	<link href="pof25.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="favicon.ico">
+	
 </head>
 
 <body>
+	
+<script>
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
+</script>
+	
 <div class="container">
     <div id="flash"></div>
 </div>
@@ -33,7 +39,12 @@ window.addEventListener("load", () => {
 
     const flashDiv = document.getElementById("flash");
     flashDiv.appendChild(player);
-    player.load("calendar.swf?nocache=" + Date.now());
+    player.load({
+		url: "calendar.swf?nocache=" + Date.now(),
+		parameters: {
+			isMobile: isMobile ? "true" : "false"
+		}
+	});
 
     const resizePlayer = () => {
         const width = flashDiv.clientWidth;
