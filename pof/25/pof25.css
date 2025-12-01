@@ -18,26 +18,52 @@
 	z-index:1;
 }
 
-.container video{
+.container .surprise video{
 	display: block;
 	margin: 0 auto;
 }
 
-.container audio{
+.container .surprise audio{
 	width: 70%;
 }
 
-.container iframe{
+.container .surprise iframe{
 	display: block;
 	margin: 0 auto;
 }
-.container p1{
+
+.container .surprise p1{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 20px;
 	font-size: 20pt;
 	font-family: "Calisto MT";
+}
+
+.container .credit p1{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 20pt;
+	font-family: "Calisto MT";
+}
+
+.container .credit p2{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12pt;
+	font-family: "Calisto MT";
+}
+.container .credit img{
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	text-align: center;
+	padding-top: 20px;
 }
 
 .audiocontainer{
