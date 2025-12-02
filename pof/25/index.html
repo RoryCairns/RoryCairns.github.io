@@ -2,21 +2,63 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Hot Dad - A Christmas Shortcut</title>
-	<link href="../pof25.css?v=1.2" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/gif" href="../favicon.gif">
+	<title>Online Advent Calendar 2025</title>
+	
+	<meta content="Post Office Family Online Advent Calendar 2025" property="og:title" />
+	<meta content="Return daily to open the 24 P.O. boxes in Poshote Mills!" property="og:description" />
+	<meta content="https://irns.uk/pof/25" property="og:url" />
+	<meta content="https://irns.uk/pof/25/embed.png" property="og:image" />
+	
+	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<link href="pof25.css?v=1.2" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico">
+	
 </head>
 
 <body>
+	
+<script>
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
+</script>
+	
 <div class="container">
-	<div class="surprise">
-		<iframe width="1080" height="630" src="https://www.youtube.com/embed/Ygae9VNWfwg?si=w70tm-b0ehCBAZ0H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-		<p1>
-			The post has not arrived for this day yet!
-		</p1>
-	</div>
+    <div id="flash"></div>
 </div>
+
+<script>
+window.RufflePlayer = window.RufflePlayer || {};
+window.RufflePlayer.config = {
+    autoplay: "on",
+    splashScreen: false,
+    unmuteOverlay: "hidden"
+};
+
+window.addEventListener("load", () => {
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+
+    const flashDiv = document.getElementById("flash");
+    flashDiv.appendChild(player);
+    player.load({
+		url: "calendar.swf?nocache=" + Date.now(),
+		parameters: {
+			isMobile: isMobile ? "true" : "false"
+		}
+	});
+
+    const resizePlayer = () => {
+        const width = flashDiv.clientWidth;
+        const height = width * 400 / 550;
+        player.style.width = width + "px";
+        player.style.height = height + "px";
+    };
+
+    resizePlayer();
+
+    const resizeObserver = new ResizeObserver(resizePlayer);
+    resizeObserver.observe(flashDiv);
+});
+</script>
 
 <div class="snowflakes" aria-hidden="true">
   <div class="snowflake">
