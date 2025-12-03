@@ -1,10 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
+#flash-viewport {
+    width: 100%;
+    max-width: 1080px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
 #flash {
 	width: 95%;
     margin: 0 auto;
 }
+/*#flash {
+    position: relative;
+    display: block;
+    transform-origin: top left;
+	
+}*/
 .container {
     width: 90%;
     max-width: 1080px;
@@ -12,13 +25,19 @@
     background-color: #FFF;
     border-left: 10px dotted #F5E8D5;
     border-right: 10px dotted #F5E8D5;
-    padding: 30px 0;        /* shorthand for top & bottom */
+    padding: 30px 0;
     position: relative;
     z-index: 1;
+	font-family: "Calisto MT", "Book Antiqua", Palatino, serif;
 }
 
 
 .container .surprise video{
+	display: block;
+	margin: 0 auto;
+}
+
+.container .surprise img{
 	display: block;
 	margin: 0 auto;
 }
@@ -38,7 +57,6 @@
 	text-align: center;
 	padding-top: 20px;
 	font-size: 20pt;
-	font-family: "Calisto MT";
 }
 
 .container .credit p1{
@@ -47,7 +65,6 @@
 	text-align: center;
 	padding-top: 20px;
 	font-size: 20pt;
-	font-family: "Calisto MT";
 }
 
 .container .credit p2{
@@ -56,7 +73,6 @@
 	text-align: center;
 	padding-top: 20px;
 	font-size: 12pt;
-	font-family: "Calisto MT";
 }
 .container .credit img{
 	display: block;
