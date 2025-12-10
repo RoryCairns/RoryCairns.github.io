@@ -2,20 +2,42 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Hot Dad - A Christmas Shortcut</title>
-	<link href="../pof25.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/gif" href="../favicon.gif">
+	<title>Day 10 - Market Hall</title>
+	
+	<meta content="Day 10 - Market Hall" property="og:title" />
+	<meta content="by Violet Ray & Red Palette" property="og:description" />
+	<meta content="https://irns.uk/pof/25/10/" property="og:url" />
+	<meta content="https://irns.uk/pof/25/doors/10.png" property="og:image" />
+	
+	<link href="../pof25.css?v=1.4" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../favicon.ico">
 </head>
-
 <body>
+	
 <div class="container">
 	<div class="surprise">
-		<iframe width="1080" height="630" src="https://www.youtube.com/embed/Ygae9VNWfwg?si=w70tm-b0ehCBAZ0H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-		<p1>
-			The post has not arrived for this day yet!
-		</p1>
+		<div class ="audiocontainer">
+			<audio onplay="playGif()" controls loop>
+					<source  src="ill-be-home-for-xmas-cover.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div id="gifspot">
+		</div>
+		<script>
+			function playGif() {
+			  document.getElementById("gifspot").innerHTML = '<img width="80%" src="coming_home_from_the_market.gif">';
+			}
+		</script>
 	</div>
+	<div class="credit">
+		<p1>Day 10 - Market Hall<br><br>
+			Made by Violet Ray & <a href="https://redpaletteart.com/">Red Palette</a></p1>
+		<img src="../doors/10.png"><img>
+		<p2>
+			for <a href="https://irns.uk/pof/25">Online Advent Calendar 2025</a>
+		</p2>
+	</div>
+	
 </div>
 
 <div class="snowflakes" aria-hidden="true">
