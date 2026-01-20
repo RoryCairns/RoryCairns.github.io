@@ -170,6 +170,52 @@ body {
 	/*color: #a02e57;*/
 	cursor: url("cursors/LINK-SELECT.png"),auto;
 }
+#animation:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#animation2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#concept:hover {
+	/*color: #a02e57;*/
+	transform: rotate(-10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#concept2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#music:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#music2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#writing:hover {
+	/*color: #a02e57;*/
+	transform: rotate(-10deg);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#writing2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#editing:hover {
+	/*color: #a02e57;*/
+	transform: rotate(10deg) scaleX(-1);
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+}
+#editing2:hover {
+	/*color: #a02e57;*/
+	cursor: url("cursors/LINK-SELECT.png"),auto;
+	transform: scaleX(-1);
+}
 
 .sider ul {
 	margin-top: auto;
@@ -202,11 +248,23 @@ body {
 	filter: hue-rotate(-100deg);
 }
 
+.sider p1{
+	color: #2C499B;
+	font-style: italic;
+}
+
 #animation {
 	padding-top: 23px;
 	background-image:url("portfolio.svg");
 	background-size: 90%;
 	font-size: 20pt;
+}
+#animation2 {
+	padding-top: 23px;
+	background-image:url("portfolio2.svg");
+	background-size: 90%;
+	font-size: 20pt;
+	color: #9F2E57;
 }
 #animation3 {
 	margin-top: 250px;
@@ -227,6 +285,15 @@ body {
 	font-size: 22pt;
 	width: 63%;
 }
+#concept2 {
+	padding-top: 23px;
+	background-image:url("contact2.svg");
+	background-size: 90%;
+	padding-right: 6px;
+	font-size: 22pt;
+	width: 63%;
+	color: #9F2E57;
+}
 #concept3 {
 	position: relative;
 	top: -9px;
@@ -244,6 +311,15 @@ body {
 	padding-right: 6px;
 	font-size: 23pt;
 }
+
+#music2 {
+	background-image:url("blog2.svg");
+	background-size: 67%;
+	padding-top: 24px;
+	padding-right: 6px;
+	font-size: 23pt;
+	color: #9F2E57;
+}
 #music3 {
 	background-image:url("blog.svg");
 	position: relative;
@@ -258,6 +334,13 @@ body {
 	background-size: 80%;
 	padding-top: 23px;
 	font-size: 22pt;
+}
+#writing2 {
+	background-image:url("cv2.svg");
+	background-size: 80%;
+	padding-top: 23px;
+	font-size: 22pt;
+	color: #9F2E57;
 }
 #writing3 {
 	background-image:url("cv.svg");
@@ -278,6 +361,13 @@ body {
 	position: relative;
 	top:-29px;
 	font-size: 22pt;
+}
+#editing2 {
+	background-image:url("contact2.svg");
+	background-size: 85%;
+	padding-top: 18px;
+	transform: scaleX(-1);
+	color: #9F2E57;
 }
 #editing3 {
 	background-image:url("contact.svg");
@@ -314,6 +404,12 @@ body {
 	margin-top: 10px;
 	/*border: 1px solid #000000;*/
 }
+.lower_content {
+	width: 86%;
+	margin-left: 20px;
+	margin-top: 10px;
+	/*border: 1px solid #000000;*/
+}
 
 .pix {
 	text-align: center;
@@ -329,6 +425,29 @@ h1{
 	margin: 0px;
 	
 }
+h2{
+	font-weight: normal;
+	font-family: "Calisto MT", 'times-new-roman', sans-serif;
+	font-size: 28pt;
+	letter-spacing: -2pt;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+h3{
+	font-size: 13pt;
+	font-family: "journal", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color:#9F2E57;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 0px;
+	letter-spacing: -1pt;
+}
+
 .p1{
 	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
 	text-align: justify;
@@ -362,6 +481,21 @@ h1{
 	text-decoration: underline;
 }
 
+.p3{
+	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
+	text-align: left;
+	font-size: 13pt;
+	display: block;
+	letter-spacing: -0.7pt;
+	margin: 0px;
+}
+
+.section{
+	display: block;
+	/*border: 2px solid #000000;
+	margin: auto;*/
+}
+
 .book{
 	float: right;
 	margin-right: 17%;
@@ -369,6 +503,11 @@ h1{
 }
 
 .reel{
+	border: 2px solid #000000;
+	padding: 4px;
+}
+
+.thumbnail {
 	border: 2px solid #000000;
 	padding: 4px;
 }
@@ -398,6 +537,21 @@ h1{
 	border: 2px solid #000000;
 	margin: auto;
 	margin-top: 20px;
+	padding: 4px;
+}
+
+.track{
+	width:90%;
+	display: block;
+	float: center;
+}
+
+.pic2 {
+	display: block;
+	border: 2px solid #000000;
+	margin: auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
 	padding: 4px;
 }
 
