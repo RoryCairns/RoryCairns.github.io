@@ -197,12 +197,12 @@ body {
 	/*color: #a02e57;*/
 	cursor: url("cursors/LINK-SELECT.png"),auto;
 }
-#writing:hover {
+#models:hover {
 	/*color: #a02e57;*/
 	transform: rotate(-10deg);
 	cursor: url("cursors/LINK-SELECT.png"),auto;
 }
-#writing2:hover {
+#models2:hover {
 	/*color: #a02e57;*/
 	cursor: url("cursors/LINK-SELECT.png"),auto;
 }
@@ -267,7 +267,7 @@ body {
 	color: #9F2E57;
 }
 #animation3 {
-	margin-top: 250px;
+	margin-top: 230px;
 	position: relative;
 	left: -17px;
 	top: 2px;
@@ -329,20 +329,20 @@ body {
 	padding-right: 6px;
 	font-size: 23pt;
 }
-#writing {
+#models {
 	background-image:url("cv.svg");
 	background-size: 80%;
 	padding-top: 23px;
 	font-size: 22pt;
 }
-#writing2 {
+#models2 {
 	background-image:url("cv2.svg");
 	background-size: 80%;
 	padding-top: 23px;
 	font-size: 22pt;
 	color: #9F2E57;
 }
-#writing3 {
+#models3 {
 	background-image:url("cv.svg");
 	position: relative;
 	top: -28px;
