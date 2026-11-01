@@ -12,12 +12,14 @@
 <body>
 	<div class="container">
 		<div class="left_column">
-			<a href="/"><img src="/name5.svg" width="100%" class="logo"></a>
-			<img src="/deer.png" width="100%" class="deer">
+			<div class="tippytop">
+				<a href="/"><img src="/name5.svg" width="100%" class="logo"></a>
+				<img src="/deer.png" width="100%" class="deer">
+			</div>
 			<!img src="face.svg" width="100%" class="face">
 			<div class="sider">
 				<ul>
-					<p1>Check out these neat subpages!</p1>
+					<p1><span>Check out these neat subpages!</span></p1>
 					<a href="animation"><li id="animation">Animation</li></a>
 					<a href="models"><li id="models">Models</li></a>
 					<a href="concept"><li id="concept">Concept</li></a>
@@ -43,31 +45,44 @@
 					<h1>
 			  	    Portfolio&nbsp; </h1>
 					<p class="p2">
-						Under Construction.<br><br>
-						Here are some things I've worked on. Click for more details!
+						Here are some things I've worked on.<br>Click the pictures for details.<br><br>You might even click the links for <u>even more</u> details.
 				  	</p>
 
-					<h3><a>All the Stops&nbsp;</a></h3>
-					<img src="ats/preview.png" width="90%" class="pic2">
+					<h3><a href = "ats">All the Stops&nbsp;</a></h3>
+					<img src="ats/preview.png" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">A promotional image from <a href = "ats">All the Stops</a></p></div>
 					
-					<h3><a>Cardiff Animation Festival&nbsp;</a></h3>
-					<img src="/pic1b.gif" width="90%" class="pic2">
+					<h3><a href = "ident">Cardiff Animation Festival&nbsp;</a></h3>
+					<img src="/pic1b.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">An involved shot from my <a href = "ident">Cardiff Animation Weekender Ident</a></p></div>
 				
 					
-					<h3><a>Loops&nbsp;</a></h3>
-					<img src="loops/lab2.gif" width="90%" class="pic2">
+					<h3><a href = "loops">Loops&nbsp;</a></h3>
+					<img src="loops/lab2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">A whiteboard animation from my collection of <a href = "loops">Loops</a></p></div>
+					
+					<h3><a href = "timescape">Timescape&nbsp;</a></h3>
+					<img src="timescape/7anim2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">Win talks to Atlas in <a href = "timescape">Timescape: The Seven Animals</a></p></div>
 					
 					
 		  	  </div>
 				<div class="right_content">
-					<h3><a>Cooked&nbsp;</a></h3>
-					<img src="cooked/cooked.gif" width="90%" class="pic2">
-					<h3><a>Advent Calendar 2025&nbsp;</a></h3>
-					<img src="calendar/calendar.gif" width="90%" class="pic2">
-					<h3><a>Keepsake&nbsp;</a></h3>
-					<img src="keepsake/trailer2.gif" width="90%" class="pic2">
-					<h3><a>Mistle&nbsp;</a></h3>
-					<img src="/pic2.gif" width="90%" class="pic2">
+					<h3><a href = "cooked">Cooked&nbsp;</a></h3>
+					<img src="cooked/cooked.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">One of the shots I animated for Eliot Round and Vera Abecassis De aires Mateus' <a href = "cooked">Cooked</a></p></div>
+					
+					<h3><a href = "calendar">Advent Calendar 2025&nbsp;</a></h3>
+					<img src="calendar/calendar2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">The animated map from my <a href = "calendar">Advent Calendar 2025</a></p></div>
+					
+					<h3><a href = "keepsake">Keepsake&nbsp;</a></h3>
+					<img src="keepsake/trailer2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">The final shot in the trailer for my Club Penguin fan game <a href = "keepsake">Keepsake</a></p></div>
+					
+					<h3><a href = "magicked/mistle">Mistle&nbsp;</a></h3>
+					<img src="/pic2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">The animated hot air balloon from my music video for <a href = "mistle">Mistle</a></p></div>
 					
 					
 				</div>
@@ -84,6 +99,50 @@
 				</ul>
 			</div>
 		</div>
+		
+		<div class="clearfix"></div>
+		<div id="myModal" class="modal">
+			
+			
+			<div id="modal-box">
+				<div class="close">×</div>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+		</div>
+		<div id="modal-bg" class="modal-bg"></div>
+		
 	</div>
+	
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		var modalbg = document.getElementById('modal-bg');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  	modal.style.display = "none";
+			modalbg.style.display = "none";
+		}
+
+		// Get all images and insert the clicked image inside the modal
+		// Get the content of the image description and insert it inside the modal image caption
+		var images = document.querySelectorAll("img.enl");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		var i;
+		for (i = 0; i < images.length; i++) {
+			images[i].onclick = function(){
+				modal.style.display = "block";
+				modalbg.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.nextElementSibling.innerHTML;
+			}
+		}
+	</script>
 </body>
 </html>

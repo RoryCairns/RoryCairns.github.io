@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Keepsake</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico?">
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/oof8fkn.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="left_column">
+			<div class="tippytop">
+				<a href="/"><img src="/name5.svg" width="100%" class="logo"></a>
+				<img src="/deer.png" width="100%" class="deer">
+			</div>
+			<!img src="face.svg" width="100%" class="face">
+			<div class="sider">
+				<ul>
+					<p1><span>Check out these neat subpages!</span></p1>
+					<a href="/portfolio/animation"><li id="animation">Animation</li></a>
+					<a href="/portfolio/models"><li id="models">Models</li></a>
+					<a href="/portfolio/concept"><li id="concept">Concept</li></a>
+					<a href="/portfolio/music"><li id="music">Music</li></a>
+					<a href="/portfolio/editing"><li id="editing"><p class="f2">Editing</p></li></a>
+			  	</ul>
+			</div>
+			<!-- <img src="deer.png" width="100%" class="deer">-->
+		</div>
+		<div class="right_column">
+			<div class="header" id="menu">
+				<ul>
+					<a href="/about"><li id="about">About</li></a>
+					<a href="/blog"><li id="blog">Blog</li></a>
+					<a href="/portfolio"><li id="portfolio2">Portfolio</li></a>
+					<a href="/cv"><li id="cv">CV</li></a>
+					<a href="/contact"><li id="contact">Contact</li></a>
+			  	</ul>
+			</div>
+			<section class="content">
+				<div class="left_content">
+					<img src="keepsake logo2.png" width="100%" class="logo4" alt="Keepsake: Clipping Point">
+					<!-- <h2>Keepsake&nbsp;&nbsp; </h2>-->
+					<p class="p2"> Keepsake: Clipping Point is the first mission my in-development fan continuation of the Club Penguin PSA missions, originally from 2006-2010.&nbsp;</p>
+					<p class="p2">
+						<a href="https://www.youtube.com/@keepsakegame">Stay tuned</a> for updates on the Keepsake YouTube channel.&nbsp;
+					</p>
+					
+		  	  </div>
+				<div class="right_content">
+					<iframe class="pic2" width="90%" src="https://www.youtube.com/embed/vQOdAZJVUYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<img src="trailer2.gif" width="90%" class="pic2 enl">
+					<div class="desc"><p class="p2">The final shot in the trailer.</p></div>
+				</div>
+				
+				<span class="heading">
+					<h2><span>Music</span></h2>
+				</span>
+				
+				<div class="left_content">
+					<h3>G Theme&nbsp;</h3>
+						<audio controls class="track">
+							<source  src="g theme test13m.mp3" type="audio/mp3">
+						</audio>
+					<br>
+					<h3>Morning Radio</h3>
+						<audio controls class="track">
+							<source  src="morning radio2.wav" type="audio/wav">
+						</audio>
+					<br>
+					<h3>Stealth and About</h3>
+						<audio controls class="track">
+							<source  src="stealth and about 9.wav" type="audio/wav">
+						</audio>
+					<br>
+		  	  	</div>
+				<div class="right_content2">
+					<h3>Trailer&nbsp;</h3>
+						<audio controls class="track">
+							<source  src="psa remake3g.wav" type="audio/wav">
+						</audio>
+					<br>
+					<h3>Menu&nbsp;</h3>
+						<audio controls class="track">
+							<source  src="keepsake intro 2.mp3" type="audio/mp3">
+						</audio>
+				</div>
+				
+			</section>
+			<div class="socials">
+				<ul>
+					<li id="email"><a href="mailto:roryc@irns.uk">Email</a></li>
+					//
+					<li id="linkedin"><a href="https://www.linkedin.com/in/rorycairns/">LinkedIn</a></li>
+					//
+					<li id="bluesky"><a href="https://bsky.app/profile/roryca.irns.uk">Bluesky</a></li>
+					//
+					<li id="youtube"><a href="https://www.youtube.com/@rorycairns">Youtube</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="clearfix"></div>
+		<div id="myModal" class="modal">
+			
+			
+			<div id="modal-box">
+				<div class="close">×</div>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+		</div>
+		<div id="modal-bg" class="modal-bg"></div>
+		
+	</div>
+	
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		var modalbg = document.getElementById('modal-bg');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  	modal.style.display = "none";
+			modalbg.style.display = "none";
+		}
+
+		// Get all images and insert the clicked image inside the modal
+		// Get the content of the image description and insert it inside the modal image caption
+		var images = document.querySelectorAll("img.enl");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		var i;
+		for (i = 0; i < images.length; i++) {
+			images[i].onclick = function(){
+				modal.style.display = "block";
+				modalbg.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.nextElementSibling.innerHTML;
+			}
+		}
+	</script>
+</body>
+</html>
