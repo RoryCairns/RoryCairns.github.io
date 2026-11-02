@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Net Good</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico?">
+	<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+	<link href="/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/oof8fkn.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="left_column">
+			<div class="tippytop">
+				<a href="/"><img src="/name5.svg" width="100%" class="logo"></a>
+				<img src="/deer.png" width="100%" class="deer">
+			</div>
+			<!img src="face.svg" width="100%" class="face">
+				<div class="sider">
+					<ul>
+						<p1><span>Check out these neat subpages!</span></p1>
+						<a href="/portfolio/animation">
+							<li id="animation">Animation</li>
+						</a>
+						<a href="/portfolio/models">
+							<li id="models">Models</li>
+						</a>
+						<a href="/portfolio/concept">
+							<li id="concept">Concept</li>
+						</a>
+						<a href="/portfolio/music">
+							<li id="music">Music</li>
+						</a>
+						<a href="/portfolio/editing">
+							<li id="editing">
+								<p class="f2">Editing</p>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<!-- <img src="deer.png" width="100%" class="deer">-->
+		</div>
+		<div class="right_column">
+			<div class="header" id="menu">
+				<ul>
+					<a href="/about">
+						<li id="about">About</li>
+					</a>
+					<a href="/blog">
+						<li id="blog">Blog</li>
+					</a>
+					<a href="/portfolio">
+						<li id="portfolio2">Portfolio</li>
+					</a>
+					<a href="/cv">
+						<li id="cv">CV</li>
+					</a>
+					<a href="/contact">
+						<li id="contact">Contact</li>
+					</a>
+				</ul>
+			</div>
+			<section class="content">
+				<div class="left_content">
+					<img src="net good.svg" width="100%" class="logo4" alt="Net Good">
+					<p class="p2"> Net Good is the larger story for Posey of <a href="/portfolio/ats">All the
+							Stops</a>.&nbsp;</p>
+
+
+
+				</div>
+				<div class="right_content">
+
+
+				</div>
+				<span class="heading">
+					<h2><span>Screenplay</span></h2>
+				</span>
+				<div class="left_content">
+					<div class="middle_content">
+					<p class="p2">Read the pilot for Net Good here:<br><a href="/portfolio/netgood/pilot 02-11-26.pdf">The Long String</a></p>
+					</div>
+				</div>
+				<div class="right_content2">
+					<p class="p2">In The Long String, Posey takes the big step outside her office and into the wider world.</p>
+				</div>
+				<span class="heading">
+					<h2><span>Concept</span></h2>
+				</span>
+				<div class="left_content">
+					<img src="20260417_093018.jpg" width="90%" class="pic2 enl">
+					<div class="desc">
+						<p class="p2">Palomar's lighthouse from the pilot.</p>
+					</div>
+					<img src="20260417_095534.jpg" width="90%" class="pic2 enl">
+					<div class="desc">
+						<p class="p2">The Perennial Jockey's mortarboard-berets from the pilot.</p>
+					</div>
+				</div>
+				<div class="right_content2">
+					<img src="20260417_094554.jpg" width="90%" class="pic2 enl">
+					<div class="desc">
+						<p class="p2">The Shallow Building and Net Loft from the pilot.</p>
+					</div>
+				</div>
+
+			</section>
+			<div class="socials">
+				<ul>
+					<li id="email"><a href="mailto:roryc@irns.uk">Email</a></li>
+					//
+					<li id="linkedin"><a href="https://www.linkedin.com/in/rorycairns/">LinkedIn</a></li>
+					//
+					<li id="bluesky"><a href="https://bsky.app/profile/roryca.irns.uk">Bluesky</a></li>
+					//
+					<li id="youtube"><a href="https://www.youtube.com/@rorycairns">Youtube</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div id="myModal" class="modal">
+
+
+			<div id="modal-box">
+				<div class="close">×</div>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+		</div>
+		<div id="modal-bg" class="modal-bg"></div>
+
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+		var modalbg = document.getElementById('modal-bg');
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+			modalbg.style.display = "none";
+		}
+
+		// Get all images and insert the clicked image inside the modal
+		// Get the content of the image description and insert it inside the modal image caption
+		var images = document.querySelectorAll("img.enl");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		var i;
+		for (i = 0; i < images.length; i++) {
+			images[i].onclick = function () {
+				modal.style.display = "block";
+				modalbg.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.nextElementSibling.innerHTML;
+			}
+		}
+	</script>
+</body>
+
+</html>

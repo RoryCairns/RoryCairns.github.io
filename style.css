@@ -484,6 +484,13 @@ body {
 	margin-left: 20px;
 	/*border: 1px solid #000000;*/
 }
+.middle_content {
+	width: 100%;
+	/*border: 1px solid #000000;*/
+}
+.middle_content .p2{
+	text-align: center;
+}
 
 .pix {
 	text-align: center;
