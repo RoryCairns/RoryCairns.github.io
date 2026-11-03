@@ -588,7 +588,7 @@ h3 a:hover{
 	font-size: 13pt;
 	letter-spacing: -0.7pt;
 }
-.p2 a{
+.p2 a, .updates a{
 	font-size: 13pt;
 	font-family: "journal", sans-serif;
 	font-weight: 600;
@@ -613,7 +613,7 @@ h3 a:hover{
 }
 
 
-.p2 a:hover{
+.p2 a:hover, .updates a:hover{
 	text-decoration: underline;
 }
 
@@ -634,7 +634,7 @@ h3 a:hover{
 .favs{
 	text-align: center;
 	padding-bottom: 10px;
-}
+}.aa
 
 .favs h2{
 	font-size: 20pt;
@@ -709,6 +709,34 @@ h3 a:hover{
 .reel-wrap:hover .reel-link,
 .reel-link:focus-visible {
 	opacity: 1;
+}
+.yt-wrap {
+	position: relative;
+}
+.yt-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: block;
+	height: 50%;
+	width: auto;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+}
+.yt-enl {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	display: block;
+	background-color: #fbfaf8;
+	mix-blend-mode: lighten;
+	opacity: 0;
+	/*transition: opacity 200ms ease;*/
+	cursor: url("cursors/LINK-SELECT.png"), pointer;
+}
+.yt-enl:hover,
+.yt-enl:focus-visible {
+	opacity: 0;
 }
 .grad{
 	height:100px;
@@ -1107,6 +1135,11 @@ div.desc {
 	max-width: 700px;
 	border: 2px solid #000000;
 	padding: 4px;
+}
+.modal-video {
+	display: none;
+	height: auto;
+	aspect-ratio: 16 / 9;
 }
 #modal-box {
 	position: relative;

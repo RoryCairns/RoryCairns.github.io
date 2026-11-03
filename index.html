@@ -62,17 +62,10 @@
 					<video width="100%" autoplay muted loop class="reel2">
 						<source src="/portfolio/misc/reel 4_2.mp4" type="video/mp4">
 					</video>
-					<a href="https://www.youtube.com/watch?v=s8hUZm0FL34" class="reel-link" target="_blank" rel="noopener noreferrer" aria-label="Watch Rory Cairns's reel on YouTube">
+					<a href="https://www.youtube.com/watch?v=s8hUZm0FL34" class="reel-link" target="_blank" rel="noopener noreferrer">
 						<img src="nameb.png" alt="" class="reel-name">
 					</a>
 				</div>
-				<!div class="grad">
-					<! /div>
-						<!iframe class="reel2" height="325px" width="100%"
-							src="https://www.youtube.com/embed/s8hUZm0FL34" title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-							<! /iframe>
 
 								<div class="left_content">
 									<h1>
@@ -163,31 +156,7 @@
 
 	</div>
 
-	<script>
-		var modal = document.getElementById('myModal');
-		var modalbg = document.getElementById('modal-bg');
-
-		var span = document.getElementsByClassName("close")[0];
-		span.onclick = function () {
-			modal.style.display = "none";
-			modalbg.style.display = "none";
-		}
-
-
-		var images = document.querySelectorAll("img.enl");
-		var modalImg = document.getElementById("img01");
-		var captionText = document.getElementById("caption");
-		var i;
-		for (i = 0; i < images.length; i++) {
-			images[i].onclick = function () {
-				modal.style.display = "block";
-				modalbg.style.display = "block";
-				modalImg.src = this.src;
-				modalImg.alt = this.alt;
-				captionText.innerHTML = this.nextElementSibling.innerHTML;
-			}
-		}
-	</script>
+	  <script src="/modal.js" defer></script>
 </body>
 
 </html>
