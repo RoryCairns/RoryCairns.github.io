@@ -490,6 +490,11 @@ body {
 }
 .middle_content .p2{
 	text-align: center;
+	border-style: dashed;
+	padding:5px;
+	border-width: 2px;
+	margin-left: 20px;
+	margin-right: 25px;
 }
 
 .pix {
