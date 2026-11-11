@@ -587,6 +587,31 @@ h3 a:hover{
 	font-size: 13pt;
 	letter-spacing: -0.7pt;
 }
+.initials{
+	margin-top: 20px;
+	display: block;
+	display: flow-root;
+}
+.initial{
+	display: block;
+	float:left;
+	width:24%;
+}
+.initial img{
+	display: block;
+	width: 90%;
+}
+.initial2{
+	font-family: "Times New Roman", serif;
+	text-align: left;
+	display: block;
+	font-size: 10.7pt;
+	float:right;
+	font-weight: bold;
+	width: 76%;
+	letter-spacing: -0.7pt;
+	color:#572a71;
+}
 .p2{
 	font-family: "Calisto MT", 'Sorts Mill Goudy', serif;
 	text-align: left;
