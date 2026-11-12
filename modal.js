@@ -81,6 +81,7 @@
 			}
 			const videoUrl = new URL(video.src, document.baseURI);
 			videoUrl.searchParams.set("autoplay", "1");
+			modalVideo.classList.toggle("modal-video-vimeo", videoUrl.hostname === "player.vimeo.com");
 			modalImage.style.display = "none";
 			modalVideo.style.display = "block";
 			modalVideo.src = videoUrl.href;

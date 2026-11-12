@@ -824,6 +824,16 @@ h3 a:hover{
 	padding: 4px;
 }
 
+iframe.pic2 {
+	box-sizing: border-box;
+	width: 90%;
+	aspect-ratio: 16 / 9;
+}
+
+iframe.pic2.vimeo {
+	aspect-ratio: 4 / 3;
+}
+
 .socials ul {
 	margin:auto;
 	text-align: right;
@@ -1189,6 +1199,9 @@ div.desc {
 	display: none;
 	height: auto;
 	aspect-ratio: 16 / 9;
+}
+.modal-video-vimeo {
+	aspect-ratio: 4 / 3;
 }
 #modal-box {
 	position: relative;
