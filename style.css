@@ -825,7 +825,6 @@ h3 a:hover{
 }
 
 iframe.pic2 {
-	box-sizing: border-box;
 	width: 90%;
 	aspect-ratio: 16 / 9;
 }
