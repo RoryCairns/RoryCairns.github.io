@@ -41,7 +41,7 @@
 	if (!modalVideo) {
 		modalVideo = document.createElement("iframe");
 		modalVideo.id = "video01";
-		modalVideo.className = "modal-content modal-video";
+		modalVideo.className = "modal-content";
 		modalVideo.title = "YouTube video player";
 		modalVideo.allow = "autoplay; encrypted-media; picture-in-picture; web-share";
 		modalVideo.referrerPolicy = "strict-origin-when-cross-origin";
@@ -81,7 +81,9 @@
 			}
 			const videoUrl = new URL(video.src, document.baseURI);
 			videoUrl.searchParams.set("autoplay", "1");
-			modalVideo.classList.toggle("modal-video-vimeo", videoUrl.hostname === "player.vimeo.com");
+			const isFourThree = video.classList.contains("fourthree");
+			modalVideo.classList.toggle("modal-video-fourthree", isFourThree);
+			modalVideo.classList.toggle("modal-video-sixteennine", !isFourThree);
 			modalImage.style.display = "none";
 			modalVideo.style.display = "block";
 			modalVideo.src = videoUrl.href;
