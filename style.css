@@ -795,6 +795,20 @@ h3 a:hover{
 	margin-right: auto;
 	top: -15px;
 }
+.me2 {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid;
+}
+.me2,.me2 img{
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 110px; /* Saf3+, Chrome */
+    border-radius: 110px; /* Opera 10.5, IE 9 */
+    /*-moz-border-radius: 30px;  Disabled for FF1+ */
+    }
 .pix {
 	position: relative;
 	margin-top: -40px;
